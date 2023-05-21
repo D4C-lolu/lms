@@ -1,0 +1,7 @@
+2023-05-21 15:49:54.535 [main] ERROR college.Main - Hello?
+2023-05-21 15:50:00.516 [main] ERROR college.Main - Hello?
+2023-05-21 15:51:09.568 [main] DEBUG college.Main - We've just greeted the user!
+2023-05-21 15:51:09.575 [main] INFO  college.Main - We've just greeted the user!
+2023-05-21 15:51:09.575 [main] WARN  college.Main - We've just greeted the user!
+2023-05-21 15:51:09.575 [main] ERROR college.Main - We've just greeted the user!
+2023-05-21 15:51:09.575 [main] FATAL college.Main - We've just greeted the user!
