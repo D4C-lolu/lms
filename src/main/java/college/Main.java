@@ -6,11 +6,13 @@ import college.book.BookList;
 import college.book.BorrowedBook;
 import college.library.Lender;
 import college.library.Library;
+import college.users.Position;
 import college.users.User;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
 import java.util.ArrayList;
+import java.util.List;
 import java.util.Scanner;
 
 
@@ -20,12 +22,12 @@ public class Main {
     private static Scanner sc;
 
     public static void displayMenu() {
-        logger.trace("Enter '1' to see the list of available books.");
-        logger.trace("Enter '2' to see the list of books in your library.");
-        logger.trace("Enter '3' to the books still pending.");
-        logger.trace("Enter '4' to request a book.");
-        logger.trace("Enter '5' to cancel a request. ");
-        logger.trace("Or enter 0 to end the program");
+        logger.info("Enter '1' to see the list of available books.");
+        logger.info("Enter '2' to see the list of books in your library.");
+        logger.info("Enter '3' to the books still pending.");
+        logger.info("Enter '4' to request a book.");
+        logger.info("Enter '5' to cancel a request. ");
+        logger.info("Or enter 0 to end the program");
     }
 
     public static User logIn() {
@@ -38,20 +40,25 @@ public class Main {
             try {
                 input = sc.nextLine();
                 if (input.equals(endChar)) {
-                    logger.trace("\nExiting program");
+                    logger.info("\nExiting program");
                     System.exit(0);
                 }
                 user = LMS.getInstance().findUser(input);
-
+                if(user==null){
+                    logger.error("The number above does not match any user");
+                    logger.info("Please enter a valid user id: ");
+                }
+                else{
+                    break;
+                }
             } catch (final NumberFormatException e) {
                 logger.warn("\nPlease enter a valid number: ");
-            } catch (final NullPointerException e) {
+            } catch(final  NullPointerException e){
                 logger.error("The number above does not match any user");
                 logger.info("Please enter a valid user id: ");
-
             }
         }
-        while (!input.equals(endChar) || user == null);
+        while (!input.equals(endChar));
 
         return user;
     }
@@ -60,42 +67,42 @@ public class Main {
         ArrayList<BookList> bookList = Library.getInstance().getAvailableBooks();
 
         if (bookList.size() != 0) {
-            logger.trace("The currently available books in the library are: ");
-            logger.trace("\n=====================================");
+            logger.info("The currently available books in the library are: ");
+            logger.info("\n=====================================");
             bookList.forEach(bk -> {
-                int n = bk.getNumofBorrowedCopies();
+                int n = bk.getAvailableCopies();
                 Book b = bk.getCopy();
-                logger.trace("\n{} by {}. Subject:{} with ISBN: {} .({} copies available)", b.getBookName(), b.getAuthorName(), b.getSubject(), b.getISBN(), n);
+                logger.info("\n{} by {}. Subject: {} with ISBN: {} .({} copies available)", b.getBookName(), b.getAuthorName(), b.getSubject(), b.getISBN(), n);
             });
         }
     }
 
     public static void getBorrowedBooks(User user) {
         ArrayList<BorrowedBook> bk = user.getBorrowedBooks();
-        logger.trace("You currently have {} books in your library.", bk.size());
+        logger.info("You currently have {} books in your library.", bk.size());
         if (bk.size() != 0) {
-            logger.trace("\nYour library currently contains: ");
-            logger.trace("\n=====================================");
+            logger.info("\nYour library currently contains: ");
+            logger.info("\n=====================================");
             bk.forEach(b -> {
-                logger.trace("\n{} by {}.Subject: {}", b, b.getAuthorName(), b.getSubject());
+                logger.info("\n{} by {}.Subject: {}", b, b.getAuthorName(), b.getSubject());
             });
-            logger.trace("\n=====================================");
+            logger.info("\n=====================================");
         } else {
-            logger.trace("\nYou don't currently have any books in your library. ");
+            logger.info("\nYou don't currently have any books in your library. ");
         }
     }
 
     public static void viewPendingBooks(User user) {
         ArrayList<Book> pendingBooks = Lender.getInstance().getPendingBooks(user);
         if (pendingBooks.size() != 0) {
-            logger.trace("\nYou are currently requesting for: ");
-            logger.trace("\n=====================================");
+            logger.info("\nYou are currently requesting for: ");
+            logger.info("\n=====================================");
             pendingBooks.forEach(pb -> {
-                logger.trace("\n{} by {}.Subject: {}", pb.getBookName(), pb.getAuthorName(), pb.getSubject());
+                logger.info("\n{} by {}.Subject: {}", pb.getBookName(), pb.getAuthorName(), pb.getSubject());
             });
-            logger.trace("\n=====================================");
+            logger.info("\n=====================================");
         } else {
-            logger.trace("\nYou don't currently have any books in your library. ");
+            logger.info("\nYou don't currently have any books in your library. ");
         }
     }
 
@@ -121,10 +128,10 @@ public class Main {
                     //reserve a copy
                     user.submitRequest(input);
                     if (!available) {
-                        logger.trace("Apologies but it seems we're all oyt of copies of that book");
-                        logger.trace("The book will be added to your library when it becomes available");
+                        logger.info("Apologies but it seems we're all oyt of copies of that book");
+                        logger.info("The book will be added to your library when it becomes available");
                     } else {
-                        logger.trace("The book has been added to your library for the next 7 days. PLease enjoy");
+                        logger.info("The book has been added to your library for the next 7 days. PLease enjoy");
                     }
                 }
             } while (!input.equals(escapeChar));
@@ -158,9 +165,9 @@ public class Main {
                 //Remove the request
                 try {
                     user.cancelRequest(input);
-                    logger.trace("The request has been removed from your list");
+                    logger.info("The request has been removed from your list");
                 } catch (Exception e) {
-                    logger.trace("That book is not part of your current requests");
+                    logger.info("That book is not part of your current requests");
                 }
 
             } while (!input.equals(escapeChar));
@@ -193,9 +200,9 @@ public class Main {
                 //Return the book
                 try {
                     user.returnBook(input);
-                    logger.trace("The book has been removed from your library");
+                    logger.info("The book has been removed from your library");
                 } catch (Exception e) {
-                    logger.trace("That book is not part of your current requests");
+                    logger.info("That book is not part of your current requests");
                 }
 
             } while (!input.equals(escapeChar));
@@ -208,15 +215,15 @@ public class Main {
 
     public static void main(String[] args) {
 
-
-        logger.trace("\nWelcome to LMS.");
+        setUp();
+        logger.info("\nWelcome to LMS.");
         User currUser = logIn();
-        logger.trace("Good day {} .", currUser.getName());
+        logger.info("Good day {}. Rank: ({}).", currUser.getName(),currUser.getPos());
         sc = new Scanner(System.in);
         int choice = -1;
         int end = 0;
         do {
-            logger.trace("======================================");
+            logger.info("======================================");
             displayMenu();
             logger.info("\nEnter your response here: ");
             try {
@@ -255,10 +262,33 @@ public class Main {
 //
     }
 
-    public void setUp() {
-        logger.trace("\nInitialization...........................");
+    public static void setUp() {
+        logger.info("\nInitialization...........................");
 
         //Create Dummy Books
+        Book book1 = new Book("Things fall apart","Chinua Achebe","Historical Fiction","10505",true);
+        Book book2 = new Book("Arrow of God","Chinua Achebe","Historical Fiction","23223",true);
+        Book book3 = new Book("Things fall apart","Chinua Achebe","Historical Fiction","10505",true);
+        Book book4 = new Book("Things fall apart","Chinua Achebe","Historical Fiction","10505",true);
+        Book book5 = new Book("Things fall apart","Chinua Achebe","Historical Fiction","10505",true);
+        Book book6 = new Book("Things fall apart","Chinua Achebe","Historical Fiction","10505",true);
+        Book book7 = new Book("Things fall apart","Chinua Achebe","Historical Fiction","10505",true);
+        Book book8 = new Book("Things fall apart","Chinua Achebe","Historical Fiction","10505",true);
+
+        ArrayList<Book> bookList = new ArrayList<>();
+        bookList.addAll(List.of(book1,book2,book3,book4,book5,book6,book7,book8));
+
+        Library.getInstance().initialize(bookList);
+
+        User user1 = new User("Roboute","0013", Position.SS2);
+        User user2 = new User("Konrad", "0008",Position.JS3);
+        User user3 = new User("Khan","0005",Position.Teacher);
+
+        ArrayList<User> users = new ArrayList<>();
+        users.addAll(List.of(user1,user2,user3));
+
+        LMS.getInstance().initialize(users);
+        logger.info("\nDone");
 
     }
 }

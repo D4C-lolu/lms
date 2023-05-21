@@ -5,3 +5,116 @@
 2023-05-21 15:51:09.575 [main] WARN  college.Main - We've just greeted the user!
 2023-05-21 15:51:09.575 [main] ERROR college.Main - We've just greeted the user!
 2023-05-21 15:51:09.575 [main] FATAL college.Main - We've just greeted the user!
+2023-05-21 19:22:29.107 [main] INFO  college.Main - 
+Please enter a valid user ID to log in or 'x' to exit : 
+2023-05-21 19:23:29.034 [main] INFO  college.Main - 
+Please enter a valid user ID to log in or 'x' to exit : 
+2023-05-21 19:25:13.298 [main] INFO  college.Main - 
+Please enter a valid user ID to log in or 'x' to exit : 
+2023-05-21 19:25:19.807 [main] ERROR college.Main - The number above does not match any user
+2023-05-21 19:25:19.807 [main] INFO  college.Main - Please enter a valid user id: 
+2023-05-21 19:25:39.696 [main] ERROR college.Main - The number above does not match any user
+2023-05-21 19:25:39.696 [main] INFO  college.Main - Please enter a valid user id: 
+2023-05-21 19:26:53.850 [main] INFO  college.Main - 
+Please enter a valid user ID to log in or 'x' to exit : 
+2023-05-21 19:27:48.671 [main] INFO  college.Main - 
+Please enter a valid user ID to log in or 'x' to exit : 
+2023-05-21 19:32:11.658 [main] INFO  college.Main - 
+Initialization...........................
+2023-05-21 19:32:11.670 [main] INFO  college.Main - 
+Done
+2023-05-21 19:32:11.670 [main] INFO  college.Main - 
+Welcome to LMS.
+2023-05-21 19:32:11.675 [main] INFO  college.Main - 
+Please enter a valid user ID to log in or 'x' to exit : 
+2023-05-21 19:32:17.277 [main] INFO  college.Main - 
+Initialization...........................
+2023-05-21 19:32:17.293 [main] INFO  college.Main - 
+Done
+2023-05-21 19:32:17.293 [main] INFO  college.Main - 
+Welcome to LMS.
+2023-05-21 19:32:17.299 [main] INFO  college.Main - 
+Please enter a valid user ID to log in or 'x' to exit : 
+2023-05-21 19:32:22.681 [main] INFO  college.Main - 
+Initialization...........................
+2023-05-21 19:32:22.693 [main] INFO  college.Main - 
+Done
+2023-05-21 19:32:22.693 [main] INFO  college.Main - 
+Welcome to LMS.
+2023-05-21 19:32:22.698 [main] INFO  college.Main - 
+Please enter a valid user ID to log in or 'x' to exit : 
+2023-05-21 19:32:31.700 [main] INFO  college.Main - 
+Initialization...........................
+2023-05-21 19:32:31.713 [main] INFO  college.Main - 
+Done
+2023-05-21 19:32:31.713 [main] INFO  college.Main - 
+Welcome to LMS.
+2023-05-21 19:32:31.718 [main] INFO  college.Main - 
+Please enter a valid user ID to log in or 'x' to exit : 
+2023-05-21 19:32:35.593 [main] ERROR college.Main - The number above does not match any user
+2023-05-21 19:32:35.594 [main] INFO  college.Main - Please enter a valid user id: 
+2023-05-21 19:32:38.905 [main] ERROR college.Main - The number above does not match any user
+2023-05-21 19:32:38.906 [main] INFO  college.Main - Please enter a valid user id: 
+2023-05-21 19:32:41.752 [main] INFO  college.Main - 
+Exiting program
+2023-05-21 19:32:47.909 [main] INFO  college.Main - 
+Initialization...........................
+2023-05-21 19:32:47.924 [main] INFO  college.Main - 
+Done
+2023-05-21 19:32:47.924 [main] INFO  college.Main - 
+Welcome to LMS.
+2023-05-21 19:32:47.929 [main] INFO  college.Main - 
+Please enter a valid user ID to log in or 'x' to exit : 
+2023-05-21 19:32:52.729 [main] INFO  college.Main - User Konrad
+2023-05-21 19:33:41.336 [main] ERROR college.Main - The number above does not match any user
+2023-05-21 19:33:41.336 [main] INFO  college.Main - Please enter a valid user id: 
+2023-05-21 19:35:10.209 [main] INFO  college.Main - 
+Initialization...........................
+2023-05-21 19:35:10.219 [main] INFO  college.Main - 
+Done
+2023-05-21 19:35:10.219 [main] INFO  college.Main - 
+Welcome to LMS.
+2023-05-21 19:35:10.225 [main] INFO  college.Main - 
+Please enter a valid user ID to log in or 'x' to exit : 
+2023-05-21 19:35:18.760 [main] INFO  college.Main - Good day Konrad. Rank: (JS3).
+2023-05-21 19:35:18.761 [main] INFO  college.Main - ======================================
+2023-05-21 19:35:18.761 [main] INFO  college.Main - Enter '1' to see the list of available books.
+2023-05-21 19:35:18.762 [main] INFO  college.Main - Enter '2' to see the list of books in your library.
+2023-05-21 19:35:18.762 [main] INFO  college.Main - Enter '3' to the books still pending.
+2023-05-21 19:35:18.762 [main] INFO  college.Main - Enter '4' to request a book.
+2023-05-21 19:35:18.763 [main] INFO  college.Main - Enter '5' to cancel a request. 
+2023-05-21 19:35:18.763 [main] INFO  college.Main - Or enter 0 to end the program
+2023-05-21 19:35:18.764 [main] INFO  college.Main - 
+Enter your response here: 
+2023-05-21 19:35:28.759 [main] INFO  college.Main - The currently available books in the library are: 
+2023-05-21 19:35:28.759 [main] INFO  college.Main - 
+=====================================
+2023-05-21 19:35:28.761 [main] INFO  college.Main - 
+Things fall apart by Chinua Achebe. Subject:Historical Fiction with ISBN: 10505 .(0 copies available)
+2023-05-21 19:35:28.762 [main] INFO  college.Main - 
+Arrow of God by Chinua Achebe. Subject:Historical Fiction with ISBN: 23223 .(0 copies available)
+2023-05-21 19:35:28.762 [main] INFO  college.Main - ======================================
+2023-05-21 19:35:28.762 [main] INFO  college.Main - Enter '1' to see the list of available books.
+2023-05-21 19:35:28.762 [main] INFO  college.Main - Enter '2' to see the list of books in your library.
+2023-05-21 19:35:28.763 [main] INFO  college.Main - Enter '3' to the books still pending.
+2023-05-21 19:35:28.763 [main] INFO  college.Main - Enter '4' to request a book.
+2023-05-21 19:35:28.763 [main] INFO  college.Main - Enter '5' to cancel a request. 
+2023-05-21 19:35:28.763 [main] INFO  college.Main - Or enter 0 to end the program
+2023-05-21 19:35:28.764 [main] INFO  college.Main - 
+Enter your response here: 
+2023-05-21 19:35:31.347 [main] INFO  college.Main - The currently available books in the library are: 
+2023-05-21 19:35:31.347 [main] INFO  college.Main - 
+=====================================
+2023-05-21 19:35:31.348 [main] INFO  college.Main - 
+Things fall apart by Chinua Achebe. Subject:Historical Fiction with ISBN: 10505 .(0 copies available)
+2023-05-21 19:35:31.348 [main] INFO  college.Main - 
+Arrow of God by Chinua Achebe. Subject:Historical Fiction with ISBN: 23223 .(0 copies available)
+2023-05-21 19:35:31.348 [main] INFO  college.Main - ======================================
+2023-05-21 19:35:31.348 [main] INFO  college.Main - Enter '1' to see the list of available books.
+2023-05-21 19:35:31.349 [main] INFO  college.Main - Enter '2' to see the list of books in your library.
+2023-05-21 19:35:31.349 [main] INFO  college.Main - Enter '3' to the books still pending.
+2023-05-21 19:35:31.349 [main] INFO  college.Main - Enter '4' to request a book.
+2023-05-21 19:35:31.349 [main] INFO  college.Main - Enter '5' to cancel a request. 
+2023-05-21 19:35:31.349 [main] INFO  college.Main - Or enter 0 to end the program
+2023-05-21 19:35:31.349 [main] INFO  college.Main - 
+Enter your response here: 
