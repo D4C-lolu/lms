@@ -81,6 +81,7 @@ public class Book {
 
     /**
      * Equals is overridden to check equality on only the ISBN field
+     *
      * @param obj An Object representing another book
      * @return boolean indicating whtehr obj equals the object that calls this method
      */

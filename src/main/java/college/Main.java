@@ -98,6 +98,7 @@ public class Main {
 
     /**
      * Prints the list of books the user has currently borrowed
+     *
      * @param user user object
      */
     public static void getBorrowedBooks(User user) {
@@ -117,6 +118,7 @@ public class Main {
 
     /**
      * Prints a list of unavailable books currently being requested by the user
+     *
      * @param user User object
      */
     public static void viewPendingBooks(User user) {
@@ -136,6 +138,7 @@ public class Main {
     /**
      * Creates a request object for a book in the library.
      * If available, the Lender object processes it and adds to the user's collection
+     *
      * @param user user object
      */
     public static void requestBook(User user) {
@@ -178,6 +181,7 @@ public class Main {
 
     /**
      * Removes a request object from the Lender object's queue
+     *
      * @param user user object
      */
     public static void cancelRequest(User user) {
@@ -218,6 +222,7 @@ public class Main {
 
     /**
      * Terminates borrowing early and adds the book back to the available list
+     *
      * @param user user object
      */
     public static void returnBook(User user) {

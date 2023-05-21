@@ -90,7 +90,10 @@ public class User {
         BookList bk = Library.getInstance().getBooks(ISBN);
         //set one of the unavailable books to available
         Book b = bk.getReturnedCopy();
-        b.setAvailable(true);
+        if (b != null) {
+            b.setAvailable(true);
+        }
+
     }
 
 
@@ -98,6 +101,10 @@ public class User {
         this.borrowedBooks.add(book);
     }
 
+    @Override
+    public int hashCode() {
+        return Objects.hash(regNo);
+    }
 
     @Override
     public boolean equals(Object obj) {

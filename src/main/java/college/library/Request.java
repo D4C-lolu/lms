@@ -23,7 +23,8 @@ public class Request {
 
     @Override
     public int hashCode() {
-        return super.hashCode();
+        String hash = ISBN + user.getRegNo();
+        return Objects.hash(hash);
     }
 
     @Override
