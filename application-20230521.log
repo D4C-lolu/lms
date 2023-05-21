@@ -343,3 +343,40 @@ Things fall apart by Chinua Achebe. Subject: Historical Fiction with ISBN: 10505
 2023-05-21 20:02:52.667 [main] INFO  college.Main - 
 Enter your response here: 
 2023-05-21 20:03:04.707 [main] INFO  college.Main - Exiting Program...
+2023-05-21 20:03:10.554 [main] INFO  college.Main - 
+Initialization...........................
+2023-05-21 20:03:10.564 [main] INFO  college.Main - 
+Done
+2023-05-21 20:03:10.567 [main] INFO  college.Main - 
+Welcome to LMS.
+2023-05-21 20:03:10.571 [main] INFO  college.Main - 
+Please enter a valid user ID to log in or 'x' to exit : 
+2023-05-21 20:03:43.457 [main] INFO  college.Main - Good day Khan. Rank: (Teacher).
+2023-05-21 20:03:43.458 [main] INFO  college.Main - ======================================
+2023-05-21 20:03:43.458 [main] INFO  college.Main - Enter '1' to see the list of available books.
+2023-05-21 20:03:43.459 [main] INFO  college.Main - Enter '2' to see the list of books in your library.
+2023-05-21 20:03:43.459 [main] INFO  college.Main - Enter '3' to the books still pending.
+2023-05-21 20:03:43.459 [main] INFO  college.Main - Enter '4' to request a book.
+2023-05-21 20:03:43.460 [main] INFO  college.Main - Enter '5' to cancel a request. 
+2023-05-21 20:03:43.460 [main] INFO  college.Main - Or enter 0 to end the program
+2023-05-21 20:03:43.460 [main] INFO  college.Main - 
+Enter your response here: 
+2023-05-21 20:03:45.379 [main] INFO  college.Main - You currently have 1 books in your library.
+2023-05-21 20:03:45.379 [main] INFO  college.Main - 
+Your library currently contains: 
+2023-05-21 20:03:45.380 [main] INFO  college.Main - 
+=====================================
+2023-05-21 20:03:45.407 [main] INFO  college.Main - 
+Arrow of God{ - borrowed on 2023-05-21, dueDate=2023-05-28}
+ by Chinua Achebe.Subject: Historical Fiction
+2023-05-21 20:03:45.408 [main] INFO  college.Main - 
+=====================================
+2023-05-21 20:03:45.408 [main] INFO  college.Main - ======================================
+2023-05-21 20:03:45.408 [main] INFO  college.Main - Enter '1' to see the list of available books.
+2023-05-21 20:03:45.409 [main] INFO  college.Main - Enter '2' to see the list of books in your library.
+2023-05-21 20:03:45.409 [main] INFO  college.Main - Enter '3' to the books still pending.
+2023-05-21 20:03:45.409 [main] INFO  college.Main - Enter '4' to request a book.
+2023-05-21 20:03:45.409 [main] INFO  college.Main - Enter '5' to cancel a request. 
+2023-05-21 20:03:45.410 [main] INFO  college.Main - Or enter 0 to end the program
+2023-05-21 20:03:45.410 [main] INFO  college.Main - 
+Enter your response here: 

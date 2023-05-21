@@ -25,6 +25,9 @@ public class Main {
     private static final Logger logger = LogManager.getLogger(Main.class);
     private static Scanner sc;
 
+    /**
+     * A method to periodically check the LMS, Lender and Library objcets and process any overdue books/ avaialable requests
+     */
     private static void run() {
         LMS.getInstance().checkOverDue();
         Lender.getInstance().processRequests();
@@ -39,6 +42,11 @@ public class Main {
         logger.info("Or enter 0 to end the program");
     }
 
+    /**
+     * A method to ensure only users with an ID can use the application.
+     *
+     * @return Returns the user object of the user whose ID is entered
+     */
     public static User logIn() {
         sc = new Scanner(System.in);
         logger.info("\nPlease enter a valid user ID to log in or 'x' to exit : ");
@@ -71,6 +79,9 @@ public class Main {
         return user;
     }
 
+    /**
+     * Prints the books that can currently be borrowed from the library
+     */
     public static void getAvailableBooks() {
         ArrayList<BookList> bookList = Library.getInstance().getAvailableBooks();
 
@@ -85,6 +96,10 @@ public class Main {
         }
     }
 
+    /**
+     * Prints the list of books the user has currently borrowed
+     * @param user user object
+     */
     public static void getBorrowedBooks(User user) {
         ArrayList<BorrowedBook> bk = user.getBorrowedBooks();
         logger.info("You currently have {} books in your library.", bk.size());
@@ -100,6 +115,10 @@ public class Main {
         }
     }
 
+    /**
+     * Prints a list of unavailable books currently being requested by the user
+     * @param user User object
+     */
     public static void viewPendingBooks(User user) {
         ArrayList<Book> pendingBooks = Lender.getInstance().getPendingBooks(user);
         if (pendingBooks.size() != 0) {
@@ -114,6 +133,11 @@ public class Main {
         }
     }
 
+    /**
+     * Creates a request object for a book in the library.
+     * If available, the Lender object processes it and adds to the user's collection
+     * @param user user object
+     */
     public static void requestBook(User user) {
         try {
             String escapeChar = "/";
@@ -152,6 +176,10 @@ public class Main {
 
     }
 
+    /**
+     * Removes a request object from the Lender object's queue
+     * @param user user object
+     */
     public static void cancelRequest(User user) {
         try {
             String escapeChar = "/";
@@ -188,6 +216,10 @@ public class Main {
         }
     }
 
+    /**
+     * Terminates borrowing early and adds the book back to the available list
+     * @param user user object
+     */
     public static void returnBook(User user) {
         try {
             String escapeChar = "/";
@@ -307,7 +339,7 @@ public class Main {
         ArrayList<Request> requests = new ArrayList<>();
         requests.addAll(List.of(r1, r2));
         Lender.getInstance().addRequests(requests);
-
+        //Khan gets the book even though his request is added later
         logger.info("\nDone");
 
     }

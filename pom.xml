@@ -12,7 +12,7 @@
     <description>
         A simple maven application meant to serve as a Library management system
     </description>
-    <url>https://github.com/college-lolu/lms</url>
+    <url>https://github.com/d4c-lolu/lms</url>
 
     <properties>
         <maven.compiler.source>11</maven.compiler.source>
@@ -31,9 +31,10 @@
             <version>2.20.0</version>
         </dependency>
         <dependency>
-            <groupId>com.opencsv</groupId>
-            <artifactId>opencsv</artifactId>
-            <version>5.7.1</version>
+            <groupId>org.junit.jupiter</groupId>
+            <artifactId>junit-jupiter-engine</artifactId>
+            <version>5.9.1</version>
+            <scope>test</scope>
         </dependency>
     </dependencies>
 
