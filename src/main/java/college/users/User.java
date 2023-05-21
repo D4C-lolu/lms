@@ -60,6 +60,11 @@ public class User {
     }
 
     public void cancelRequest(String ISBN) {
+        Request request = new Request(ISBN, this);
+        if (!Lender.getInstance().getQueuedRequests().contains(request)) {
+            System.out.println("This book is not currently in your queue!");
+            return;
+        }
         Lender.getInstance().removeRequest(ISBN, this);
     }
 

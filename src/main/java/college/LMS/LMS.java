@@ -1,6 +1,5 @@
 package college.LMS;
 
-
 import college.users.User;
 
 import java.util.ArrayList;
@@ -30,6 +29,12 @@ public class LMS {
     public void initialize(ArrayList<User> users) {
         this.users = users;
 
+    }
+
+    public void checkOverDue() {
+        this.users.forEach(user -> {
+            user.removeDueBooks();
+        });
     }
 
     public ArrayList<User> getUsers() {

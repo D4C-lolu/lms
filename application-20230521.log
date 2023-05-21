@@ -118,3 +118,228 @@ Arrow of God by Chinua Achebe. Subject:Historical Fiction with ISBN: 23223 .(0 c
 2023-05-21 19:35:31.349 [main] INFO  college.Main - Or enter 0 to end the program
 2023-05-21 19:35:31.349 [main] INFO  college.Main - 
 Enter your response here: 
+2023-05-21 19:36:43.951 [main] INFO  college.Main - 
+Initialization...........................
+2023-05-21 19:36:43.963 [main] INFO  college.Main - 
+Done
+2023-05-21 19:36:43.963 [main] INFO  college.Main - 
+Welcome to LMS.
+2023-05-21 19:36:43.968 [main] INFO  college.Main - 
+Please enter a valid user ID to log in or 'x' to exit : 
+2023-05-21 19:37:15.901 [main] INFO  college.Main - Good day Konrad. Rank: (JS3).
+2023-05-21 19:37:15.902 [main] INFO  college.Main - ======================================
+2023-05-21 19:37:15.902 [main] INFO  college.Main - Enter '1' to see the list of available books.
+2023-05-21 19:37:15.903 [main] INFO  college.Main - Enter '2' to see the list of books in your library.
+2023-05-21 19:37:15.903 [main] INFO  college.Main - Enter '3' to the books still pending.
+2023-05-21 19:37:15.903 [main] INFO  college.Main - Enter '4' to request a book.
+2023-05-21 19:37:15.903 [main] INFO  college.Main - Enter '5' to cancel a request. 
+2023-05-21 19:37:15.903 [main] INFO  college.Main - Or enter 0 to end the program
+2023-05-21 19:37:15.903 [main] INFO  college.Main - 
+Enter your response here: 
+2023-05-21 19:37:18.864 [main] INFO  college.Main - The currently available books in the library are: 
+2023-05-21 19:37:18.864 [main] INFO  college.Main - 
+=====================================
+2023-05-21 19:37:18.867 [main] INFO  college.Main - 
+Things fall apart by Chinua Achebe. Subject: Historical Fiction with ISBN: 10505 .(7 copies available)
+2023-05-21 19:37:18.867 [main] INFO  college.Main - 
+Arrow of God by Chinua Achebe. Subject: Historical Fiction with ISBN: 23223 .(1 copies available)
+2023-05-21 19:37:18.867 [main] INFO  college.Main - ======================================
+2023-05-21 19:37:18.867 [main] INFO  college.Main - Enter '1' to see the list of available books.
+2023-05-21 19:37:18.868 [main] INFO  college.Main - Enter '2' to see the list of books in your library.
+2023-05-21 19:37:18.868 [main] INFO  college.Main - Enter '3' to the books still pending.
+2023-05-21 19:37:18.868 [main] INFO  college.Main - Enter '4' to request a book.
+2023-05-21 19:37:18.868 [main] INFO  college.Main - Enter '5' to cancel a request. 
+2023-05-21 19:37:18.869 [main] INFO  college.Main - Or enter 0 to end the program
+2023-05-21 19:37:18.869 [main] INFO  college.Main - 
+Enter your response here: 
+2023-05-21 19:37:48.678 [main] INFO  college.Main - You currently have 0 books in your library.
+2023-05-21 19:37:48.679 [main] INFO  college.Main - 
+You don't currently have any books in your library. 
+2023-05-21 19:37:48.679 [main] INFO  college.Main - ======================================
+2023-05-21 19:37:48.679 [main] INFO  college.Main - Enter '1' to see the list of available books.
+2023-05-21 19:37:48.679 [main] INFO  college.Main - Enter '2' to see the list of books in your library.
+2023-05-21 19:37:48.680 [main] INFO  college.Main - Enter '3' to the books still pending.
+2023-05-21 19:37:48.680 [main] INFO  college.Main - Enter '4' to request a book.
+2023-05-21 19:37:48.680 [main] INFO  college.Main - Enter '5' to cancel a request. 
+2023-05-21 19:37:48.681 [main] INFO  college.Main - Or enter 0 to end the program
+2023-05-21 19:37:48.681 [main] INFO  college.Main - 
+Enter your response here: 
+2023-05-21 19:37:53.276 [main] INFO  college.Main - 
+You don't currently have any books in your library. 
+2023-05-21 19:37:53.276 [main] INFO  college.Main - ======================================
+2023-05-21 19:37:53.276 [main] INFO  college.Main - Enter '1' to see the list of available books.
+2023-05-21 19:37:53.276 [main] INFO  college.Main - Enter '2' to see the list of books in your library.
+2023-05-21 19:37:53.277 [main] INFO  college.Main - Enter '3' to the books still pending.
+2023-05-21 19:37:53.277 [main] INFO  college.Main - Enter '4' to request a book.
+2023-05-21 19:37:53.277 [main] INFO  college.Main - Enter '5' to cancel a request. 
+2023-05-21 19:37:53.278 [main] INFO  college.Main - Or enter 0 to end the program
+2023-05-21 19:37:53.278 [main] INFO  college.Main - 
+Enter your response here: 
+2023-05-21 19:38:46.459 [main] ERROR college.Main - Invalid ISBN. No such book exists in our library yet.
+2023-05-21 19:38:46.460 [main] INFO  college.Main - Please enter a valid ISBN or / to return to the main menu
+2023-05-21 19:38:51.768 [main] INFO  college.Main - ======================================
+2023-05-21 19:38:51.769 [main] INFO  college.Main - Enter '1' to see the list of available books.
+2023-05-21 19:38:51.769 [main] INFO  college.Main - Enter '2' to see the list of books in your library.
+2023-05-21 19:38:51.769 [main] INFO  college.Main - Enter '3' to the books still pending.
+2023-05-21 19:38:51.770 [main] INFO  college.Main - Enter '4' to request a book.
+2023-05-21 19:38:51.770 [main] INFO  college.Main - Enter '5' to cancel a request. 
+2023-05-21 19:38:51.771 [main] INFO  college.Main - Or enter 0 to end the program
+2023-05-21 19:38:51.771 [main] INFO  college.Main - 
+Enter your response here: 
+2023-05-21 19:38:58.459 [main] INFO  college.Main - The book has been added to your library for the next 7 days. PLease enjoy
+2023-05-21 19:39:04.882 [main] INFO  college.Main - ======================================
+2023-05-21 19:39:04.883 [main] INFO  college.Main - Enter '1' to see the list of available books.
+2023-05-21 19:39:04.883 [main] INFO  college.Main - Enter '2' to see the list of books in your library.
+2023-05-21 19:39:04.883 [main] INFO  college.Main - Enter '3' to the books still pending.
+2023-05-21 19:39:04.883 [main] INFO  college.Main - Enter '4' to request a book.
+2023-05-21 19:39:04.884 [main] INFO  college.Main - Enter '5' to cancel a request. 
+2023-05-21 19:39:04.884 [main] INFO  college.Main - Or enter 0 to end the program
+2023-05-21 19:39:04.884 [main] INFO  college.Main - 
+Enter your response here: 
+2023-05-21 19:39:13.767 [main] INFO  college.Main - You currently have 1 books in your library.
+2023-05-21 19:39:13.767 [main] INFO  college.Main - 
+Your library currently contains: 
+2023-05-21 19:39:13.768 [main] INFO  college.Main - 
+=====================================
+2023-05-21 19:39:13.791 [main] INFO  college.Main - 
+Things fall apart{ - borrowed on 2023-05-21, dueDate=2023-05-28}
+ by Chinua Achebe.Subject: Historical Fiction
+2023-05-21 19:39:13.791 [main] INFO  college.Main - 
+=====================================
+2023-05-21 19:39:13.792 [main] INFO  college.Main - ======================================
+2023-05-21 19:39:13.792 [main] INFO  college.Main - Enter '1' to see the list of available books.
+2023-05-21 19:39:13.793 [main] INFO  college.Main - Enter '2' to see the list of books in your library.
+2023-05-21 19:39:13.793 [main] INFO  college.Main - Enter '3' to the books still pending.
+2023-05-21 19:39:13.794 [main] INFO  college.Main - Enter '4' to request a book.
+2023-05-21 19:39:13.794 [main] INFO  college.Main - Enter '5' to cancel a request. 
+2023-05-21 19:39:13.794 [main] INFO  college.Main - Or enter 0 to end the program
+2023-05-21 19:39:13.795 [main] INFO  college.Main - 
+Enter your response here: 
+2023-05-21 19:39:17.297 [main] INFO  college.Main - The currently available books in the library are: 
+2023-05-21 19:39:17.297 [main] INFO  college.Main - 
+=====================================
+2023-05-21 19:39:17.297 [main] INFO  college.Main - 
+Things fall apart by Chinua Achebe. Subject: Historical Fiction with ISBN: 10505 .(6 copies available)
+2023-05-21 19:39:17.298 [main] INFO  college.Main - 
+Arrow of God by Chinua Achebe. Subject: Historical Fiction with ISBN: 23223 .(1 copies available)
+2023-05-21 19:39:17.298 [main] INFO  college.Main - ======================================
+2023-05-21 19:39:17.298 [main] INFO  college.Main - Enter '1' to see the list of available books.
+2023-05-21 19:39:17.299 [main] INFO  college.Main - Enter '2' to see the list of books in your library.
+2023-05-21 19:39:17.299 [main] INFO  college.Main - Enter '3' to the books still pending.
+2023-05-21 19:39:17.299 [main] INFO  college.Main - Enter '4' to request a book.
+2023-05-21 19:39:17.300 [main] INFO  college.Main - Enter '5' to cancel a request. 
+2023-05-21 19:39:17.300 [main] INFO  college.Main - Or enter 0 to end the program
+2023-05-21 19:39:17.301 [main] INFO  college.Main - 
+Enter your response here: 
+2023-05-21 19:40:10.119 [main] INFO  college.Main - The book has been added to your library for the next 7 days. PLease enjoy
+2023-05-21 19:40:16.153 [main] INFO  college.Main - ======================================
+2023-05-21 19:40:16.153 [main] INFO  college.Main - Enter '1' to see the list of available books.
+2023-05-21 19:40:16.154 [main] INFO  college.Main - Enter '2' to see the list of books in your library.
+2023-05-21 19:40:16.154 [main] INFO  college.Main - Enter '3' to the books still pending.
+2023-05-21 19:40:16.154 [main] INFO  college.Main - Enter '4' to request a book.
+2023-05-21 19:40:16.155 [main] INFO  college.Main - Enter '5' to cancel a request. 
+2023-05-21 19:40:16.155 [main] INFO  college.Main - Or enter 0 to end the program
+2023-05-21 19:40:16.155 [main] INFO  college.Main - 
+Enter your response here: 
+2023-05-21 19:40:20.056 [main] INFO  college.Main - The request has been removed from your list
+2023-05-21 19:41:31.641 [main] INFO  college.Main - 
+Initialization...........................
+2023-05-21 19:41:31.654 [main] INFO  college.Main - 
+Done
+2023-05-21 19:41:31.654 [main] INFO  college.Main - 
+Welcome to LMS.
+2023-05-21 19:41:31.662 [main] INFO  college.Main - 
+Please enter a valid user ID to log in or 'x' to exit : 
+2023-05-21 19:41:34.838 [main] INFO  college.Main - Good day Roboute. Rank: (SS2).
+2023-05-21 19:41:34.839 [main] INFO  college.Main - ======================================
+2023-05-21 19:41:34.839 [main] INFO  college.Main - Enter '1' to see the list of available books.
+2023-05-21 19:41:34.839 [main] INFO  college.Main - Enter '2' to see the list of books in your library.
+2023-05-21 19:41:34.840 [main] INFO  college.Main - Enter '3' to the books still pending.
+2023-05-21 19:41:34.840 [main] INFO  college.Main - Enter '4' to request a book.
+2023-05-21 19:41:34.841 [main] INFO  college.Main - Enter '5' to cancel a request. 
+2023-05-21 19:41:34.841 [main] INFO  college.Main - Or enter 0 to end the program
+2023-05-21 19:41:34.841 [main] INFO  college.Main - 
+Enter your response here: 
+2023-05-21 19:41:42.010 [main] INFO  college.Main - The request has been removed from your list
+2023-05-21 19:41:42.010 [main] INFO  college.Main - ======================================
+2023-05-21 19:41:42.011 [main] INFO  college.Main - Enter '1' to see the list of available books.
+2023-05-21 19:41:42.011 [main] INFO  college.Main - Enter '2' to see the list of books in your library.
+2023-05-21 19:41:42.011 [main] INFO  college.Main - Enter '3' to the books still pending.
+2023-05-21 19:41:42.012 [main] INFO  college.Main - Enter '4' to request a book.
+2023-05-21 19:41:42.012 [main] INFO  college.Main - Enter '5' to cancel a request. 
+2023-05-21 19:41:42.012 [main] INFO  college.Main - Or enter 0 to end the program
+2023-05-21 19:41:42.012 [main] INFO  college.Main - 
+Enter your response here: 
+2023-05-21 19:51:56.624 [main] INFO  college.Main - 
+Initialization...........................
+2023-05-21 19:51:56.637 [main] INFO  college.Main - 
+Done
+2023-05-21 19:51:56.643 [main] INFO  college.Main - 
+Welcome to LMS.
+2023-05-21 19:51:56.650 [main] INFO  college.Main - 
+Please enter a valid user ID to log in or 'x' to exit : 
+2023-05-21 19:52:04.688 [main] INFO  college.Main - Good day Konrad. Rank: (JS3).
+2023-05-21 19:52:04.689 [main] INFO  college.Main - ======================================
+2023-05-21 19:52:04.689 [main] INFO  college.Main - Enter '1' to see the list of available books.
+2023-05-21 19:52:04.690 [main] INFO  college.Main - Enter '2' to see the list of books in your library.
+2023-05-21 19:52:04.690 [main] INFO  college.Main - Enter '3' to the books still pending.
+2023-05-21 19:52:04.690 [main] INFO  college.Main - Enter '4' to request a book.
+2023-05-21 19:52:04.690 [main] INFO  college.Main - Enter '5' to cancel a request. 
+2023-05-21 19:52:04.690 [main] INFO  college.Main - Or enter 0 to end the program
+2023-05-21 19:52:04.690 [main] INFO  college.Main - 
+Enter your response here: 
+2023-05-21 19:52:12.334 [main] INFO  college.Main - The request has been removed from your list
+2023-05-21 19:52:12.334 [main] INFO  college.Main - ======================================
+2023-05-21 19:52:12.334 [main] INFO  college.Main - Enter '1' to see the list of available books.
+2023-05-21 19:52:12.335 [main] INFO  college.Main - Enter '2' to see the list of books in your library.
+2023-05-21 19:52:12.335 [main] INFO  college.Main - Enter '3' to the books still pending.
+2023-05-21 19:52:12.335 [main] INFO  college.Main - Enter '4' to request a book.
+2023-05-21 19:52:12.336 [main] INFO  college.Main - Enter '5' to cancel a request. 
+2023-05-21 19:52:12.336 [main] INFO  college.Main - Or enter 0 to end the program
+2023-05-21 19:52:12.336 [main] INFO  college.Main - 
+Enter your response here: 
+2023-05-21 20:02:35.792 [main] INFO  college.Main - 
+Initialization...........................
+2023-05-21 20:02:35.802 [main] INFO  college.Main - 
+Done
+2023-05-21 20:02:35.805 [main] INFO  college.Main - 
+Welcome to LMS.
+2023-05-21 20:02:35.810 [main] INFO  college.Main - 
+Please enter a valid user ID to log in or 'x' to exit : 
+2023-05-21 20:02:40.990 [main] INFO  college.Main - Good day Roboute. Rank: (SS2).
+2023-05-21 20:02:40.992 [main] INFO  college.Main - ======================================
+2023-05-21 20:02:40.993 [main] INFO  college.Main - Enter '1' to see the list of available books.
+2023-05-21 20:02:40.994 [main] INFO  college.Main - Enter '2' to see the list of books in your library.
+2023-05-21 20:02:40.995 [main] INFO  college.Main - Enter '3' to the books still pending.
+2023-05-21 20:02:40.996 [main] INFO  college.Main - Enter '4' to request a book.
+2023-05-21 20:02:40.997 [main] INFO  college.Main - Enter '5' to cancel a request. 
+2023-05-21 20:02:40.998 [main] INFO  college.Main - Or enter 0 to end the program
+2023-05-21 20:02:40.998 [main] INFO  college.Main - 
+Enter your response here: 
+2023-05-21 20:02:51.109 [main] INFO  college.Main - You currently have 0 books in your library.
+2023-05-21 20:02:51.110 [main] INFO  college.Main - 
+You don't currently have any books in your library. 
+2023-05-21 20:02:51.110 [main] INFO  college.Main - ======================================
+2023-05-21 20:02:51.110 [main] INFO  college.Main - Enter '1' to see the list of available books.
+2023-05-21 20:02:51.111 [main] INFO  college.Main - Enter '2' to see the list of books in your library.
+2023-05-21 20:02:51.111 [main] INFO  college.Main - Enter '3' to the books still pending.
+2023-05-21 20:02:51.111 [main] INFO  college.Main - Enter '4' to request a book.
+2023-05-21 20:02:51.112 [main] INFO  college.Main - Enter '5' to cancel a request. 
+2023-05-21 20:02:51.112 [main] INFO  college.Main - Or enter 0 to end the program
+2023-05-21 20:02:51.112 [main] INFO  college.Main - 
+Enter your response here: 
+2023-05-21 20:02:52.663 [main] INFO  college.Main - The currently available books in the library are: 
+2023-05-21 20:02:52.663 [main] INFO  college.Main - 
+=====================================
+2023-05-21 20:02:52.664 [main] INFO  college.Main - 
+Things fall apart by Chinua Achebe. Subject: Historical Fiction with ISBN: 10505 .(7 copies available)
+2023-05-21 20:02:52.665 [main] INFO  college.Main - ======================================
+2023-05-21 20:02:52.665 [main] INFO  college.Main - Enter '1' to see the list of available books.
+2023-05-21 20:02:52.666 [main] INFO  college.Main - Enter '2' to see the list of books in your library.
+2023-05-21 20:02:52.666 [main] INFO  college.Main - Enter '3' to the books still pending.
+2023-05-21 20:02:52.667 [main] INFO  college.Main - Enter '4' to request a book.
+2023-05-21 20:02:52.667 [main] INFO  college.Main - Enter '5' to cancel a request. 
+2023-05-21 20:02:52.667 [main] INFO  college.Main - Or enter 0 to end the program
+2023-05-21 20:02:52.667 [main] INFO  college.Main - 
+Enter your response here: 
+2023-05-21 20:03:04.707 [main] INFO  college.Main - Exiting Program...

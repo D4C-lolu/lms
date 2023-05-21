@@ -60,8 +60,14 @@ public class Lender {
         for (int i = 0; i < request.length; i++) {
             queuedRequests.add(request[i]);
         }
-        processRequests();
     }
+
+    public void addRequests(ArrayList<Request> requests) {
+        requests.forEach(r -> {
+            queuedRequests.add(r);
+        });
+    }
+
 
     public void removeRequest(String ISBN, User user) {
         this.queuedRequests.remove(new Request(ISBN, user));
