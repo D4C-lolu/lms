@@ -10,5 +10,8 @@ public enum Position {
     Teacher(6);
 
     final int val;
-    Position(int val) { this.val = val; }
+
+    Position(int val) {
+        this.val = val;
+    }
 }

@@ -4,13 +4,12 @@ import college.book.Book;
 import college.book.BookList;
 
 import java.util.ArrayList;
+import java.util.Map;
 import java.util.TreeMap;
 
 public class Library {
 
     private static Library _instance;
-    private TreeMap<String, BookList> bookCollection = new TreeMap<String, BookList>();
-    ;
 
     static {
         try {
@@ -19,9 +18,16 @@ public class Library {
             throw new RuntimeException("Exception occurred in creating singleton instance");
         }
     }
+    ;
+
+    private TreeMap<String, BookList> bookCollection = new TreeMap<String, BookList>();
 
     private Library() {
 
+    }
+
+    public static Library getInstance() {
+        return _instance;
     }
 
     public void initialize(ArrayList<Book> books) {
@@ -47,12 +53,17 @@ public class Library {
         return bk.checkIfAvailable();
     }
 
-    public BookList getBooks(String ISBN) {
-        return this.bookCollection.get(ISBN);
+    public ArrayList<BookList> getAvailableBooks() {
+        ArrayList<BookList> books = new ArrayList<>();
+        for (Map.Entry<String, BookList> entry : this.bookCollection.entrySet()) {
+            if (entry.getValue().checkIfAvailable()) {
+                books.add(entry.getValue());
+            }
+        }
+        return books;
     }
 
-
-    public static Library getInstance() {
-        return _instance;
+    public BookList getBooks(String ISBN) {
+        return this.bookCollection.get(ISBN);
     }
 }

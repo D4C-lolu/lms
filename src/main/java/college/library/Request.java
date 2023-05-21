@@ -8,7 +8,7 @@ public class Request {
     private final String ISBN;
     private final User user;
 
-    public Request(String ISBN, User user){
+    public Request(String ISBN, User user) {
         this.ISBN = ISBN;
         this.user = user;
     }
@@ -28,12 +28,12 @@ public class Request {
 
     @Override
     public boolean equals(Object obj) {
-        if(this==obj) return true;
-        if(obj ==null) return false;
-        if  (getClass()!=obj.getClass()) return false;
+        if (this == obj) return true;
+        if (obj == null) return false;
+        if (getClass() != obj.getClass()) return false;
         Request other = (Request) obj;
         String s1 = ISBN + user.getRegNo();
         String s2 = other.getISBN() + other.getUser().getRegNo();
-        return Objects.equals(s1,s2);
+        return Objects.equals(s1, s2);
     }
 }

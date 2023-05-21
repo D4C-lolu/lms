@@ -8,7 +8,7 @@ import java.util.List;
  */
 public class BookList {
 
-    private String id;
+
     private ArrayList<Book> bookCopies;
 
     public BookList(ArrayList<Book> books) {
@@ -20,15 +20,11 @@ public class BookList {
         this.bookCopies.addAll(List.of(books));
     }
 
-    public ArrayList<Book> getBookCopies() {
-        return bookCopies;
-    }
-
     public void addCopies(ArrayList<Book> books) {
         this.bookCopies.addAll(books);
     }
 
-    public void addCopy(Book book){
+    public void addCopy(Book book) {
         this.bookCopies.add(book);
     }
 
@@ -53,8 +49,12 @@ public class BookList {
         return this.getNumOfCopies() - this.getAvailableCopies();
     }
 
-    public Book getCopy(){
-        return this.bookCopies.stream().filter(b->b.isAvailable()).findFirst().orElse(null);
+    public Book getCopy() {
+        return this.bookCopies.stream().filter(b -> b.isAvailable()).findFirst().orElse(null);
+    }
+
+    public Book getReturnedCopy() {
+        return this.bookCopies.stream().filter(b -> !b.isAvailable()).findFirst().orElse(null);
     }
 
 }

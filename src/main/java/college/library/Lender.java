@@ -6,13 +6,13 @@ import college.book.BorrowedBook;
 import college.users.User;
 
 import java.util.ArrayList;
-import java.util.List;
-import java.util.PriorityQueue;
 import java.util.Arrays;
+import java.util.PriorityQueue;
+import java.util.function.Predicate;
+import java.util.stream.Collectors;
 
 public class Lender {
     private static Lender _instance;
-    private PriorityQueue<Request> queuedRequests;
 
     static {
         try {
@@ -22,16 +22,37 @@ public class Lender {
         }
     }
 
-    public PriorityQueue<Request> getQueuedRequests() {
-        return queuedRequests;
+    private PriorityQueue<Request> queuedRequests;
+
+    private Lender() {
+        this.queuedRequests = new PriorityQueue<>(10, new RequestComparator());
     }
 
     public static Lender getInstance() {
         return _instance;
     }
 
-    private Lender() {
-        this.queuedRequests = new PriorityQueue<>(10, new RequestComparator());
+    public PriorityQueue<Request> getQueuedRequests() {
+        return queuedRequests;
+    }
+
+    public ArrayList<Request> getUserRequests(User user) {
+        ArrayList<Request> requests = new ArrayList<>(this.queuedRequests);
+        String num = user.getRegNo();
+        Predicate<Request> byRegNo = r1 -> r1.getUser().getRegNo().equals(num);
+        return requests.stream().filter(byRegNo).collect(Collectors.toCollection(ArrayList::new));
+    }
+
+    public ArrayList<Book> getPendingBooks(User user) {
+        ArrayList<Request> userRequests = getUserRequests(user);
+
+        ArrayList<Book> pendingBooks = new ArrayList<>();
+        userRequests.forEach(r -> {
+            Book bk = Library.getInstance().getBooks(r.getISBN()).getCopy();
+            pendingBooks.add(bk);
+        });
+
+        return pendingBooks;
     }
 
     public void addRequests(Request... request) {
@@ -39,10 +60,11 @@ public class Lender {
         for (int i = 0; i < request.length; i++) {
             queuedRequests.add(request[i]);
         }
+        processRequests();
     }
 
-    public void removeRequest(String ISBN, User user){
-        this.queuedRequests.remove(new Request(ISBN,user));
+    public void removeRequest(String ISBN, User user) {
+        this.queuedRequests.remove(new Request(ISBN, user));
     }
 
     public void processRequests() {
@@ -51,9 +73,9 @@ public class Lender {
         Arrays.sort(requests, new RequestComparator());
         for (Request r : requests) {
             //Check if book is available
-            Boolean available =Library.getInstance().checkAvailability(r.getISBN());
+            Boolean available = Library.getInstance().checkAvailability(r.getISBN());
             //check if user currently has a copy
-            if (r.getUser().checkAlreadyBorrowed(r.getISBN())){
+            if (r.getUser().checkAlreadyBorrowed(r.getISBN())) {
                 System.out.println("List of Borrowed books already contains this book!");
                 continue;
             }

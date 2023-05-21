@@ -1,30 +1,29 @@
 package college.book;
 
 import java.util.Objects;
-import java.util.UUID;
+
 
 /**
  * A class meant to represent a book object in the library
  */
 public class Book {
-    private final String serialNo;
+
     private final String bookName;
     private final String authorName;
-    private  final String subject;
+    private final String subject;
     private final String ISBN;
     private boolean isAvailable;
 
 
     /**
-     *
-     * @param bookName string representing the name of the book
-     * @param authorName string containing the name of the book's author
-     * @param subject string containing the subject title
-     * @param ISBN A string to uniquely identify a type of book
+     * @param bookName    string representing the name of the book
+     * @param authorName  string containing the name of the book's author
+     * @param subject     string containing the subject title
+     * @param ISBN        A string to uniquely identify a type of book
      * @param isAvailable boolean indicating whether this copy of the book is available
      */
     public Book(String bookName, String authorName, String subject, String ISBN, boolean isAvailable) {
-        this.serialNo = generateSerialNo();
+
         this.bookName = bookName;
         this.authorName = authorName;
         this.subject = subject;
@@ -32,24 +31,8 @@ public class Book {
         this.isAvailable = isAvailable;
     }
 
-    /**
-     * @return serialNo the serial number of the book
-     */
-    public String getSerialNo() {
-        return serialNo;
-    }
 
     /**
-     *
-     * @return a UUID string representing the serial number of the book
-     */
-    private String generateSerialNo() {
-        UUID uuid = UUID.randomUUID();
-        return uuid.toString();
-    }
-
-    /**
-     *
      * @return the name of the book
      */
     public String getBookName() {
@@ -57,7 +40,6 @@ public class Book {
     }
 
     /**
-     *
      * @return the name of the book's author
      */
     public String getAuthorName() {
@@ -65,9 +47,7 @@ public class Book {
     }
 
 
-
     /**
-     *
      * @return the subject title of the book
      */
     public String getSubject() {
@@ -79,7 +59,6 @@ public class Book {
     }
 
     /**
-     *
      * @return a boolean indicating if the book is available or not
      */
 
@@ -88,12 +67,12 @@ public class Book {
     }
 
     /**
-     *
      * @param available a boolean indicating if the book is available
      */
     public void setAvailable(boolean available) {
         isAvailable = available;
     }
+
 
     @Override
     public int hashCode() {
